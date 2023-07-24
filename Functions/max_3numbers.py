@@ -1,0 +1,16 @@
+'''Q. Find maximum of three numbers.'''
+
+def max_num(n):
+    print(max(n))
+lists = [1,5,10,22,9]
+max_num(lists)
+
+'''another method'''
+
+def max_of_two(x,y):
+    if x > y:
+        return x
+    return y
+def max_of_three(x,y,z):
+    return max_of_two(x, max_of_two(y,z))
+print(max_of_three(3,6,-5))
